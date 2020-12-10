@@ -1,0 +1,28 @@
+table,th,td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 10px;
+}
+thead{
+	font-weight: bold;
+}
+
+h1, h2{
+	text-align: left;
+}
+
+ol li{
+	text-align: left;
+	font-size: 20px;
+}
+
+ul li{
+	text-align: left;
+	font-size: 20px;
+}
+
+.square li{
+	list-style: square;
+}
