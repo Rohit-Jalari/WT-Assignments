@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Content</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		pre
+		{
+			padding: 20px; 
+			background-color: #e6e6e6;
+			border:solid 1px;
+			border-radius: 5px;
+		}
+		textarea
+		{
+			width: 50%; 
+			padding-bottom: 50px; 
+		}
+	</style>
+
+</head>
+<body>
+	
+	<pre id="para" >This Paragraph can be changed. </pre>
+	<label>Enter the Content Below :</label><br/>
+	
+	<textarea id="textarea_id">
+	</textarea><br/>
+	
+	<button type="button" onclick="myfunction()">Submit</button>
+
+
+	<script type="text/javascript">
+		function myfunction()
+		{
+			var s=document.getElementById("textarea_id").value;
+			document.getElementById("para").innerHTML=document.getElementById("textarea_id").value;
+		}
+	</script>
+</body>
+</html>

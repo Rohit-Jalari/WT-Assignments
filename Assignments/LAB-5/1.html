@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Visibility</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<img src="1.jpg" alt="Image of an flower" id="Image" width="50%" height="50%">
+	<br/>
+	<button type="button"  onclick="hideFunction()">Hide</button>
+	<button type="button"  onclick="showFunction()">Show</button>
+
+	<script type="text/javascript">
+		function showFunction()
+		{
+			document.getElementById("Image").style.visibility="visible";
+		}
+
+		
+		function hideFunction()
+		{
+			document.getElementById("Image").style.visibility="hidden";
+		}
+	</script>
+</body>
+</html>

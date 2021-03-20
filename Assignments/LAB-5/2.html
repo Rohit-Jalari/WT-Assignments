@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Stacking</title>
+	<style type="text/css">
+		body
+		{
+			background-color: black;
+		}
+		#cpp_logo
+		{
+			border: solid 5px;
+			border-radius: 10px;
+			border-color: lime;
+			position: absolute;
+			top: 70px;
+			left: 20px;
+			width: 40%;
+			height:80%;
+		}
+		#css_logo
+		{
+			border: solid 5px;
+			border-radius: 10px;
+			border-color: lime;
+			position: absolute;
+			top: 30px;
+			left: 70px;
+			width: 40%;
+			height:80%;
+		}
+
+	</style>
+</head>
+<body>
+	<img src="css.webp" alt="CSS Logo" id="css_logo" onclick="myFunction(id)" >
+	<img src="c++.webp" alt="C++ Logo" id="cpp_logo" onclick="myFunction(id)" >
+	
+
+	<script type="text/javascript">
+		function myFunction(id)
+		{
+			if(id=="cpp_logo")
+		  {
+			document.getElementById("cpp_logo").style.zIndex=1;
+			document.getElementById("css_logo").style.zIndex=0;
+		  }
+		   else
+		  {
+			document.getElementById("cpp_logo").style.zIndex=0;
+			document.getElementById("css_logo").style.zIndex=1;
+		  }
+		}
+		
+	</script>
+</body>
+</html>
